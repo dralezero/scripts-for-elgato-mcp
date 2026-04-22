@@ -1,4 +1,5 @@
 **Install**
+
 /scripts/install-nodejs-elgatomcp.bat
 
 Run As Administrator
@@ -8,6 +9,7 @@ Installs Node.js, Sets Powershell execution policy, and installs current Elgato 
 For Node.js, update URL and file name to current version as needed
 
 **Server start / stop**
+
 /scripts/elgato_mcp_start.bat and elgato_mcp_stop.bat
 
 Do not need run as administrator
@@ -19,6 +21,7 @@ This allows starting with hidden window.
 A normal stop would require closing the command window.
 
 **Examples**
-**/examples/**
+
+/examples/
 
 Examples of Elgato MCP Server http requests the responses
