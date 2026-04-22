@@ -51,7 +51,7 @@ A normal stop would require closing the command window.
 
 Piped: all one line with only output being session ID
 
-File: alternative if pipe doesnt' work. Writes response to a file then reads the file to return session ID
+File: alternative if pipe doesn't work. Writes response to a file then reads the file to return session ID
 
 ## Examples
 
