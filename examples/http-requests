@@ -1,0 +1,32 @@
+======================================
+Get mcp-session-id from response header:
+Example ID: 94b1581c-9e72-459f-b40f-45b3f1da5420
+======================================
+ 
+'{"jsonrpc":"2.0","method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"test","version":"1.0"}},"id":1}' | Out-File -Encoding utf8 -FilePath body.json
+ 
+curl.exe -g -X POST -H "Accept: application/json, text/event-stream" -H "Content-Type: application/json" -d "@body.json" -i http://localhost:9090/mcp
+ 
+======================================
+Get tools from MCP server
+======================================
+ 
+'{"jsonrpc":"2.0","method":"tools/list","params":{},"id":2}' | Out-File -Encoding utf8 -FilePath body.json
+ 
+curl.exe -g -X POST -H "Accept: application/json, text/event-stream" -H "mcp-session-id: 94b1581c-9e72-459f-b40f-45b3f1da5420" -H "Content-Type: application/json" -d "@body.json" -i http://localhost:9090/mcp
+ 
+======================================
+Get Stream Deck MCP Actions
+======================================
+ 
+'{"jsonrpc":"2.0","method":"tools/call","params":{"name":"streamdeck__get_executable_actions","arguments":{}},"id":3}' | Out-File -Encoding utf8 -FilePath body.json
+ 
+curl.exe -g -X POST -H "Accept: application/json, text/event-stream" -H "mcp-session-id: 94b1581c-9e72-459f-b40f-45b3f1da5420" -H "Content-Type: application/json" -d "@body.json" http://localhost:9090/mcp
+ 
+======================================
+Execute Stream Deck Action based on Action ID
+======================================
+ 
+'{"jsonrpc":"2.0","method":"tools/call","params":{"name":"streamdeck__execute_action","arguments":{"id":"73fe802d-9980-4813-9a10-b943317630cb"}},"id":4}' | Out-File -Encoding utf8 -FilePath body.json
+ 
+curl.exe -g -X POST -H "Accept: application/json, text/event-stream" -H "mcp-session-id: 94b1581c-9e72-459f-b40f-45b3f1da5420" -H "Content-Type: application/json" -d "@body.json" http://localhost:9090/mcp
