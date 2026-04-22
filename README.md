@@ -18,6 +18,8 @@ For Node.js, update URL and file name to current version as needed
 
 ## Manually install MCP Server ##
 
+Video tutorial: https://www.youtube.com/watch?v=6fAbno8UpZU
+
 Install: Node.js  
 https://nodejs.org/en  
 Do not need to check "Automatically install the necessary tools"
