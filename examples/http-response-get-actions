@@ -1,0 +1,33 @@
+event: message
+data: {
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": {
+          "actions": [
+            {
+              "currentState": 0,
+              "description": {
+                "controllers": [
+                  [
+                    "Keypad"
+                  ]
+                ],
+                "description": "Open an app",
+                "id": "4113c5a483d67e118bb253d0960aca6b8e93d7af040e72ff91fcaf66a0e78ea4",
+                "name": "Open Application"
+              },
+              "id": "f58a9c12-2862-461f-a22a-4b5000b1545d",
+              "numberOfStates": 1,
+              "pluginId": "com.elgato.streamdeck.system.openapp",
+              "title": "Open Calculator"
+            }
+          ]
+        }
+      }
+    ],
+    "jsonrpc": "2.0",
+    "id": 3
+  }
+}
