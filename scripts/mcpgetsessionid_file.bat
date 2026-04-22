@@ -1,0 +1,11 @@
+@echo off
+curl.exe -s -g -X POST ^
+  -H "Accept: application/json, text/event-stream" ^
+  -H "Content-Type: application/json" ^
+  -d "{\"jsonrpc\":\"2.0\",\"method\":\"initialize\",\"params\":{\"protocolVersion\":\"2024-11-05\",\"capabilities\":{},\"clientInfo\":{\"name\":\"test\",\"version\":\"1.0\"}},\"id\":1}" ^
+  -D headers.txt ^
+  -o nul ^
+  http://localhost:9090/mcp
+
+for /f "tokens=2" %%i in ('findstr /i "mcp-session-id" headers.txt') do set SESSION_ID=%%i
+echo %SESSION_ID%
