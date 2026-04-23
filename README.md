@@ -60,3 +60,9 @@ File: alternative if pipe doesn't work. Writes response to a file then reads the
 ### /examples/
 
 Examples of Elgato MCP Server http requests the responses
+
+## Disclaimer
+
+This is an unofficial community project. I am not affiliated with 
+Elgato or any of their products. All product names, logos, 
+and brands are property of their respective owners.
