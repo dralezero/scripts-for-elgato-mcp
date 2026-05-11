@@ -6,5 +6,6 @@ if %errorlevel% == 0 (
 ) else (
     echo Starting Elgato MCP server...
     elgato-mcp-server --http
+	echo Elgato MCP server has stopped.
     pause
 )
