@@ -18,13 +18,6 @@ timeout /t 10 /nobreak
 
 echo.
 echo ================================
-echo  Setting Execution Policy...
-echo ================================
-
-powershell -ExecutionPolicy Bypass -Command "Set-ExecutionPolicy RemoteSigned -Scope LocalMachine -Force"
-
-echo.
-echo ================================
 echo  Refreshing PATH...
 echo ================================
 
