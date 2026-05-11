@@ -1,7 +1,7 @@
 @echo off
 netstat -ano | findstr /R "9090.*LISTENING" >nul 2>&1
 if %errorlevel% == 0 (
-    echo Stopping Elgato MCP Server...
+    echo Stopping Elgato MCP Server process on port 9090
     for /f "tokens=5" %%a in ('netstat -ano ^| findstr /R "9090.*LISTENING"') do (
         if not "%%a"=="0" (
 		taskkill /PID %%a /F
@@ -12,5 +12,5 @@ if %errorlevel% == 0 (
     echo No process found on port 9090.
 )
 	:done
-    echo Done. You may now close this window.
-pause >nul
+    echo You may now close this window.
+pause
