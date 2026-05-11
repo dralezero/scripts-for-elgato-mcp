@@ -17,7 +17,7 @@ Installs Node.js, Sets Powershell execution policy, and installs current Elgato 
 For Node.js, update URL and file name to current version as needed
 
 ⚠️ Script sets PowerShell script execution policy to RemoteSigned.  
-Scripts need to be allowed to install and run Elgato MCP server.  
+Scripts need to be allowed to install and run Elgato MCP server (via PowerShell).  
 AllSigned also works. Modify the script or use Manual Install to skip this change.  
 
 ## Manually install MCP Server ##
@@ -43,9 +43,11 @@ More info: https://www.elgato.com/ww/en/explorer/products/stream-deck/sd-mcp-set
 
 ### /scripts/elgato_mcp_start.bat and elgato_mcp_stop.bat
 
-Do not need run as administrator
-
 Starts and stops with friendly messages.
+
+Does not need powershell execution policy via batch cmd script
+
+Do not need run as administrator
 
 There is not official stop command so scripts look for processes to taskkill
 This allows starting with hidden window.
