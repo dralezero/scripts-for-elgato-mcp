@@ -37,7 +37,7 @@ More info: https://www.elgato.com/ww/en/explorer/products/stream-deck/sd-mcp-set
 
 ## Server start / stop
 
-### /scripts/elgato_mcp_start.bat and elgato_mcp_stop.bat
+### /scripts/elgato_mcp_start_windowed.bat and elgato_mcp_stop_windowed.bat
 
 Starts and stops with friendly messages.
 
