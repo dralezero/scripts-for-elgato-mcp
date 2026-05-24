@@ -12,7 +12,7 @@ Settings > General > Enable MCP Actions
 
 Run As Administrator
 
-Installs Node.js, Sets Powershell execution policy, and installs current Elgato MCP from npm
+Installs Node.js and installs current Elgato MCP from npm
 
 For Node.js, update URL and file name to current version as needed
 
