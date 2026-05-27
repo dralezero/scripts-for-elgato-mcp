@@ -31,7 +31,10 @@ npm install -g @elgato/mcp-server
 If script execution policy error:  
 Open PowerShell as administrator  
 run:  
-Set-ExecutionPolicy RemoteSigned
+Set-ExecutionPolicy RemoteSigned  
+
+Can set back to default after:  
+Set-ExecutionPolicy Restricted   
 
 More info: https://www.elgato.com/ww/en/explorer/products/stream-deck/sd-mcp-setup/
 
